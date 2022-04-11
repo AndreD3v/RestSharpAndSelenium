@@ -1,0 +1,1 @@
+﻿This is a file which can be used for a hapy flow using a txt document, which is ofcourse a bit stupid as a txt file can be generated just in  code quite easy, but this is just to show for what purpose you can use the resources file.
