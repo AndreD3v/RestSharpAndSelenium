@@ -29,10 +29,11 @@ namespace SpecFlowProjectBlogAndre.Steps
         }
 
         [When(@"his role is '([^']*)'")]
-        public void WhenHisRoleIs(string roleName)
+        public Task WhenHisRoleIs(string roleName)
         {
             _consultantsFunctionTitleOverview.First().Name.Should().Be(_consultantContext.Consultant);
             _consultantsFunctionTitleOverview.First().Title.Should().Contain(roleName);
+            return Task.CompletedTask;
         }
     }
 }
